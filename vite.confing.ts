@@ -3,7 +3,7 @@ import rawPlugin from 'vite-plugin-raw'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default defineConfig({
-  base: './', // GitHub Pages サブフォルダ公開なら '/skyforge/'
+  base: '/orbitron/', // GitHub Pagesのリポジトリ名に合わせて設定
   plugins: [
     rawPlugin({ match: /\.glsl$/ }),
     viteStaticCopy({
