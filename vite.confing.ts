@@ -9,5 +9,12 @@ export default defineConfig({
     viteStaticCopy({
       targets: [{ src: 'public/**/*', dest: '' }]
     })
-  ]
+  ],
+  build: {
+    rollupOptions: {
+      output: {
+        format: 'es'
+      }
+    }
+  }
 })
